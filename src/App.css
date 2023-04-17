@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.home {
+  height: 400px;
+  background-color: teal;
+}
+.about {
+  height: 400px;
+  background-color: yellow;
+}
+
+.projects {
+  height: 400px;
+  background-color: red;
+}
+.contacts {
+  height: 400px;
+  background-color: green;
+}
+
+.link {
+  text-decoration: none;
+  display: inline;
+  padding: 20px 20px;
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer;
+}
+
+/* scroll to top button */
+.top-btn-position {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+}
+.top-btn-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
