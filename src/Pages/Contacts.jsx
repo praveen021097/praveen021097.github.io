@@ -1,4 +1,5 @@
 import {
+  Text,
   Box,
   Button,
   Flex,
@@ -19,8 +20,8 @@ import {
 } from '@chakra-ui/react';
 import React  from 'react';
 import { useState } from 'react';
-import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
-import { MdEmail, MdOutlineEmail } from 'react-icons/md';
+import { BsGithub, BsLinkedin, BsMedium, BsPerson, BsTwitter } from 'react-icons/bs';
+import { MdEmail, MdOutlineEmail, MdPhone } from 'react-icons/md';
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import ScrollToTop from '../Components/ScrollToTop';
@@ -88,7 +89,7 @@ export default function Contacts() {
         p={{ base: 5, lg: 16 }}>
 
         <Box>
-          <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
+          <VStack spacing={{ base: 4, md: 8, lg: 8 }}>
             <Heading
               fontSize={{
                 base: '4xl',
@@ -96,7 +97,22 @@ export default function Contacts() {
               }}>
               Contacts
             </Heading>
-
+              <Flex><IconButton
+              mt={"-5px"}
+                    aria-label="email"
+                    variant="ghost"
+                    size="lg"
+                    fontSize="3xl"
+                    icon={<MdPhone />}
+                    _hover={{
+                      bg: 'blue.500',
+                      color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    onClick={onCopy}
+                    isRound
+                  />
+                  <Text  fontSize={"20px"} color={"GrayText"} fontWeight={"500"}>+916386134658</Text>
+                  </Flex>
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: 'column', md: 'row' }}>
@@ -167,6 +183,19 @@ export default function Contacts() {
                     isRound
                   />
                 </Link>
+                <Link href="https://medium.com/@ImPraveenKumar" target='_blank'>
+                  <IconButton
+                    aria-label="linkedin"
+                    variant="ghost"
+                    size="lg"
+                    icon={<BsMedium size="28px" />}
+                    _hover={{
+                      bg: 'blue.500',
+                      color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    isRound
+                  />
+                </Link>
                 <ScrollToTop />
               </Stack>
 
@@ -212,24 +241,13 @@ export default function Contacts() {
                       resize="none"
                       onChange={handleMessageChange}
                     />
-                   <Input type="submit" value="Send" bg={"blue"} color={"white"}/>
+                   <Input type="submit" value="Send" bg={"blue"} color={"white"} mt={"20px"}/>
                    </form>
 
-                  {/* <Button
-                 type='submit'
-                    colorScheme="blue"
-                    bg="blue.400"
-                    color="white"
-                    _hover={{
-                      bg: 'blue.500',
-                    }}
-                    isFullWidth
-                    >
-                    Send Message
-                  </Button> */}
                 </VStack>
               </Box>
             </Stack>
+
           </VStack>
         </Box>
       </Box>

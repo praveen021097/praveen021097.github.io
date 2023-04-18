@@ -68,7 +68,7 @@ const list =[
 const Projects = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box h={"auto"} width={"80%"} mt={"50px"} m={"auto"}>
+    <Box h={"auto"} width={"80%"} mt={"50px"} m={"auto"}  pt={"70px"}>
       <Heading color={"white"}>Projects</Heading>
       <Flex justifyContent={"center"} flexWrap={"wrap"} gap={4} p={"20px"}>
         {list.map((item)=>{

@@ -58,6 +58,8 @@ export default function Footer() {
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
+      position={"sticky"}
+      zIndex={9}
     >
         
       <Box
@@ -73,8 +75,15 @@ export default function Footer() {
           spacing={4}
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
+         
+      
         >
-          <Text>© 2023 Pk Templates. All rights reserved</Text>
+          <Text bgGradient="linear(to-l, #e70c0c, #100f0f)"
+                    bgClip="text"
+                    fontSize="1xl"
+                    fontWeight="extrabold"
+                    fontStyle={"italic"}
+                    fontFamily={"sans-serif"}>© 2023 Praveen Kumar. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"https://twitter.com/Praveenkm97"} target='_blank'>
               <FaTwitter />

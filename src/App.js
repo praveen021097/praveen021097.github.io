@@ -71,7 +71,7 @@ function App() {
     });
   };
   return (
-    <div className="App">
+    <div className="App" >
       <Box
         bgImage={`url(${fullbg})`}
         bgPosition="center"
@@ -80,7 +80,7 @@ function App() {
         m={"auto"}
       >
         {/* start */}
-        <Box bg={"white"} px={4}>
+        <Box bg={"white"} px={4} position={"sticky"} top={"0px"} zIndex={"9"} boxShadow={"rgba(0, 0, 0, 0.45) 0px 25px 20px -20px"} >
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
             <IconButton
               size={"md"}
