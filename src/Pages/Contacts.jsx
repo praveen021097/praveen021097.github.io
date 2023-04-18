@@ -23,6 +23,7 @@ import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
 import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ScrollToTop from '../Components/ScrollToTop';
 const confetti = {
   light: {
     primary: '4299E1', // blue.400
@@ -85,6 +86,7 @@ export default function Contacts() {
         borderRadius="lg"
         m={{ base: 5, md: 16, lg: 10 }}
         p={{ base: 5, lg: 16 }}>
+
         <Box>
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
             <Heading
@@ -165,6 +167,7 @@ export default function Contacts() {
                     isRound
                   />
                 </Link>
+                <ScrollToTop />
               </Stack>
 
               <Box

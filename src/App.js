@@ -259,7 +259,7 @@ function App() {
         </Box>
         {/* close */}
 
-        <ScrollToTop />
+        
         <Box ref={home}>
           <Home />
         </Box>

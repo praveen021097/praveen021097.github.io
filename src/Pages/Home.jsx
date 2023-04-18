@@ -1,88 +1,3 @@
-// import React from "react";
-// import { Box, Button, Flex, Heading } from "@chakra-ui/react";
-// import { Text } from "@chakra-ui/react";
-// import boybg from "../Assets/home-main.svg";
-// const Home = () => {
-//   return (
-//     <Box h={"600px"} w={"100%"}>
-//       <Flex
-       
-//         mt={"55px"}
-//         h={"100%"}
-//         w={"100%"}
-//         justifyContent={"space-between"}
-//         flexWrap={"wrap"}
-        
-//       >
-//         <Box
-        
-//           w={"50%"}
-//           display={"flex"}
-//           flexDirection={"column"}
-//           p={"80px"}
-//           gap={1}
-//         >
-//           <Flex w={"80%"} mt={"20px"} flexWrap={"wrap"} textAlign={"left"}>
-//             <Text
-//               bgGradient="linear(to-l, #ca6e28, #00ffe5)"
-//               bgClip="text"
-//               fontSize="4xl"
-//               fontWeight="extrabold"
-//               fontStyle={"italic"}
-//               fontFamily={"sans-serif"}
-//               textAlign={"left"}
-//             >
-//               Hi IM
-//             </Text>
-//             <Text
-//               bgGradient="linear(to-l, #7928CA, #00ff51)"
-//               bgClip="text"
-//               fontSize="4xl"
-//               fontWeight="extrabold"
-//               fontStyle={"italic"}
-//               fontFamily={"sans-serif"}
-//               ml={"5px"}
-//             >
-//               Praveen Kumar
-//             </Text>
-//           </Flex>
-//           <Text
-//             textAlign={"left"}
-//             bgGradient="linear(to-l, #7928CA, #e6f0e9)"
-//             bgClip="text"
-//             fontSize="18px"
-//             fontWeight="extrabold"
-//             fontStyle={"italic"}
-//             fontFamily={"sans-serif"}
-//           >
-//             I am a Full Stack web developer. I love programming and also love to
-//             make wonderful web apps. I will love to contribute more in this
-//             field and also I will be love to face new challenges in the upcoming
-//             days. Apart from coding, Drawing is my favorite which I like the
-//             most.
-//           </Text>
-//           <Button colorScheme={"linkedin"} w={"150px"} fontSize={"18px"} mt={"10px"}>Resume</Button>
-//         </Box>
-//         <Box w={"50%"} h={"100%"} p={"50px"}>
-//           <Box
-          
-//             width={"80%"}
-//             h={"90%"}
-//             m={"auto"}
-//             marginTop={"auto"}
-//             bgImage={`url(${boybg})`}
-//             bgPosition="center"
-//             bgRepeat="no-repeat"
-//             bgSize={"cover"}
-//           ></Box>
-//         </Box>
-//       </Flex>
-//     </Box>
-//   );
-// };
-
-// export default Home;
-
 import {
   Container,
   Stack,
@@ -170,13 +85,14 @@ export default function Projects() {
           position={'relative'}
           w={'full'}>
           <Blob
-            w={'150%'}
-            h={'150%'}
+            w={'100%'}
+            h={'100%'}
             position={'absolute'}
             top={'-20%'}
             left={0}
             zIndex={-1}
             color={useColorModeValue('red.50', 'red.400')}
+            border={"2px solid yellow"}
           />
           <Box
             position={'relative'}
@@ -184,27 +100,17 @@ export default function Projects() {
             rounded={'2xl'}
             boxShadow={'2xl'}
             width={'full'}
-            overflow={'hidden'}>
-            <IconButton
-              aria-label={'Play Button'}
-              variant={'ghost'}
-              _hover={{ bg: 'transparent' }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={'lg'}
-              color={'white'}
-              position={'absolute'}
-              left={'50%'}
-              top={'50%'}
-              transform={'translateX(-50%) translateY(-50%)'}
-            />
+            overflow={'hidden'}
+            border={"2px solid green"}>
+            
             <Image
               alt={'Hero Image'}
-              
+              border={"2px solid red"}
               align={'center'}
               w={'100%'}
               h={'100%'}
               src={boybg}
-                
+               border={"2px solid red"} 
             />
           </Box>
         </Flex>
