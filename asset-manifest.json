@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2b884dc8.css",
-    "main.js": "/static/js/main.5ad38081.js",
+    "main.js": "/static/js/main.69c9e9bc.js",
     "static/js/787.3c4c716a.chunk.js": "/static/js/787.3c4c716a.chunk.js",
     "static/media/fullbg3.jpg": "/static/media/fullbg3.990a7c836f9c9e732cb7.jpg",
     "static/media/rodanfieldsclone.png": "/static/media/rodanfieldsclone.dee7bdff2fbac0f88271.png",
@@ -13,6 +13,7 @@
     "static/media/github.png": "/static/media/github.bc45ee99ee31457ba80a.png",
     "static/media/home-main.svg": "/static/media/home-main.b9c7f3863a5016889948ca9aae1f330b.svg",
     "static/media/pkresume.pdf": "/static/media/pkresume.2ddaee2c0d77281c0f33.pdf",
+    "static/media/ques.png": "/static/media/ques.bae103c38990299bdb75.png",
     "static/media/pklogo.jpeg": "/static/media/pklogo.a961f1dbdaf41023d469.jpeg",
     "static/media/react.png": "/static/media/react.f3e576ba08e6be927148.png",
     "static/media/mongodb.png": "/static/media/mongodb.7a16fc61d457c9e340e2.png",
@@ -24,11 +25,11 @@
     "static/media/skills.svg": "/static/media/skills.3c3a196965f9777ef3f07b1b701695a4.svg",
     "index.html": "/index.html",
     "main.2b884dc8.css.map": "/static/css/main.2b884dc8.css.map",
-    "main.5ad38081.js.map": "/static/js/main.5ad38081.js.map",
+    "main.69c9e9bc.js.map": "/static/js/main.69c9e9bc.js.map",
     "787.3c4c716a.chunk.js.map": "/static/js/787.3c4c716a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b884dc8.css",
-    "static/js/main.5ad38081.js"
+    "static/js/main.69c9e9bc.js"
   ]
 }
