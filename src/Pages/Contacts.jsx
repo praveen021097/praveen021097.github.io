@@ -44,7 +44,7 @@ export default function Contacts() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const form =useRef();
+  const form =useRef(null);
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
@@ -58,16 +58,16 @@ export default function Contacts() {
   };
   const sendEmail = (e) => {
     e.preventDefault();
-  emailjs.sendForm('service_tvn82ax', 'service_tvn82ax', form.current, 'd4zHJbo-DU4i0I4_W')
+    console.log("hi")
+  emailjs.sendForm('service_tvn82ax', 'template_42vkm75',form.current, 'd4zHJbo-DU4i0I4_W')
   .then((result) => {
-  
+   
       console.log(result.text);
   }, (error) => {
+   
       console.log(error.text);
   });
-  setName('');
-  setEmail('');
-  setMessage('');
+ 
 };
     // reset form fields
  
@@ -177,16 +177,16 @@ export default function Contacts() {
                 color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                 shadow="base">
                 <VStack spacing={5}>
-                  <FormControl isRequired ref={form}  onSubmit={sendEmail}>
+                  <form  ref={form}  onSubmit={sendEmail}>
                     <FormLabel>Name</FormLabel>
 
                     <InputGroup>
                       <InputLeftElement children={<BsPerson />} />
                       <Input  value={name} type="text" name="user_name" placeholder="Your Name" onChange={handleNameChange}/>
                     </InputGroup>
-                  </FormControl>
+                  
 
-                  <FormControl isRequired>
+                  
                     <FormLabel>Email</FormLabel>
 
                     <InputGroup>
@@ -199,9 +199,9 @@ export default function Contacts() {
                         onChange={handleEmailChange}
                       />
                     </InputGroup>
-                  </FormControl>
+                  
 
-                  <FormControl isRequired>
+                  
                     <FormLabel>Message</FormLabel>
 
                     <Textarea
@@ -212,10 +212,11 @@ export default function Contacts() {
                       resize="none"
                       onChange={handleMessageChange}
                     />
-                  </FormControl>
+                   <Input type="submit" value="Send" bg={"blue"} color={"white"}/>
+                   </form>
 
-                  <Button
-                  type='submit'
+                  {/* <Button
+                 type='submit'
                     colorScheme="blue"
                     bg="blue.400"
                     color="white"
@@ -225,7 +226,7 @@ export default function Contacts() {
                     isFullWidth
                     >
                     Send Message
-                  </Button>
+                  </Button> */}
                 </VStack>
               </Box>
             </Stack>
