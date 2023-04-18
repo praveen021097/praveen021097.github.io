@@ -119,7 +119,7 @@ const Projects = () => {
               </Button>
             </Link>
             
-            <Popover>
+            {/* <Popover>
   <PopoverTrigger>
     <Button>about</Button>
   </PopoverTrigger>
@@ -129,7 +129,7 @@ const Projects = () => {
     <PopoverHeader>{item.title}</PopoverHeader>
     <PopoverBody>{item.descrip}</PopoverBody>
   </PopoverContent>
-</Popover>
+</Popover> */}
      
             <Link
               href={
@@ -149,8 +149,11 @@ const Projects = () => {
                 <BsGithub size={"20px"} /> Code
               </Button>
             </Link>
-          </Flex>
 
+          </Flex>
+          <Box overflow={"hidden"}>
+            <Text>{item.descrip}</Text>
+            </Box>
           
         </Box>
         })}
