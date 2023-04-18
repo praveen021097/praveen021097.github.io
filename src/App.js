@@ -123,6 +123,7 @@ function App() {
                     fontWeight="extrabold"
                     fontStyle={"italic"}
                     fontFamily={"sans-serif"}
+                    
                   >
                     Home
                   </ListItem>
@@ -136,6 +137,7 @@ function App() {
                     fontWeight="extrabold"
                     fontStyle={"italic"}
                     fontFamily={"sans-serif"}
+                    
                   >
                     Skills
                   </ListItem>

@@ -15,7 +15,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import boybg from "../Assets/home-main.svg";
-import pkresume from "../Assets/pkresume.pdf"
+import pkresume from "../Assets/pkresume.pdf";
 export default function Projects() {
   return (
     <Container maxW={'7xl'}>
@@ -28,7 +28,7 @@ export default function Projects() {
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', lg: '5xl' }}>
+            fontSize={{ base: '2xl', sm: '3xl', lg: '4xl' }}>
             <Text
               as={'span'}
               position={'relative'}
@@ -44,38 +44,45 @@ export default function Projects() {
                 zIndex: -1,
                 
               }}>
-              HI IM Praveen Kumar
+              Hi i am Praveen Kumar
             </Text>
             <br />
             <Text as={'span'} color={'red.400'}>
-             MERN Stack Developer
+            MERN Stack Developer
             </Text>
           </Heading>
           <Text color={'cyan.500'}>
-          I am a Full Stack web developer. I love programming and also love to
-            make wonderful web apps. I will love to contribute more in this
-            field and also I will be love to face new challenges in the upcoming
-            days. Apart from coding, Drawing is my favorite which I like the
-            most.
+          I am a Full Stack web developer. I love programming and also love making wonderful web apps. I would love to contribute more in this field and face new challenges in the upcoming days. Apart from coding, drawing is my favorite hobby.  
           </Text>
           <Stack
-            spacing={{ base: 4, sm: 6 }}
+            spacing={{ base: 3, sm: 4 }}
             direction={{ base: 'column', sm: 'row' }}>
-           <Link m={"auto"} href={pkresume}>
+           <Link href={pkresume} target='_blank' download={true}>
            <Button
               rounded={'full'}
               size={'lg'}
               fontWeight={'normal'}
               px={6}
               colorScheme={'red'}
+              bg={'red.400'}
+              _hover={{ bg: 'red.500' }}
              
+             >
+             Resume
+            </Button> </Link>
+            <Link m={"auto"} href={pkresume} target='_blank' >
+           <Button
+              rounded={'full'}
+              size={'lg'}
+              fontWeight={'normal'}
+              px={3}
+              colorScheme={'red'}
               bg={'red.400'}
               _hover={{ bg: 'red.500' }}
               ml={"50px"}
               m={"auto"}>
-             Resume
-            </Button></Link>
-           
+             View Resume
+            </Button> </Link>
           </Stack>
         </Stack>
         <Flex

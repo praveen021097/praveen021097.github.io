@@ -33,9 +33,11 @@ import { useDisclosure } from "@chakra-ui/react";
 import rodan from "../Assets/Projects/rodanfieldsclone.png";
 import firstcry from "../Assets/Projects/firstcry.png";
 import shopshop from "../Assets/Projects/shopshop.png";
+import ques from "../Assets/Projects/ques.png";
+import lms from "../Assets/Projects/lms.png";
 import { BsGithub } from "react-icons/bs";
 
-const rodanDescrip =  "The online reseller platform rodan perhaps requires nointroduction. The platform has carved a niche for itself and has gained popularity among consumers and retailers alike by making online reselling and shopping hassle-free and affordable."
+
 const list =[
   {
     id:1,
@@ -46,8 +48,18 @@ const list =[
     descrip:"Rodan & Fields also known as R+F, is an American multi-level marketing company specializing in skincare products. It uses independent consultants to sell its products. I along with my 3 team members built this project in 6 days time duration in the construct week at Masai."
 
   },
+  
   {
     id:2,
+    title:"QuesTymes",
+    imgLink:ques,
+    gitLink:"https://github.com/masai-builds/team-4-client-questymes.git",
+    deployLink:"https://ques-tymes.netlify.app/",
+    descrip:"This is the Masai Build and Earn collaborative Project.The application provides the features of interview schedulling and one on one session.The highlighting fuctionalities are login/signUp ,calender booking, email notification and reminder and other required functionalities also."
+
+  },
+  {
+    id:3,
     title:"FirstCry",
     imgLink:firstcry,
     gitLink:"https://github.com/unnati1004/firstcry.git",
@@ -56,12 +68,22 @@ const list =[
 
   },
   {
-    id:3,
+    id:4,
     title:"Indiegogo",
     imgLink:shopshop,
     gitLink:"https://github.com/Nachiketlele/adjoining-steel-5186.git",
     deployLink:"https://gregarious-alfajores-075a2f.netlify.app/",
     descrip:"Millions of people around the world visit Indiegogo to find clever and unconventional things that solve everyday problems large and small. By giving entrepreneurs everywhere a platform to launch new and groundbreaking products, we help surface innovations in tech, design, and much more, all before they go mainstream."
+
+  },
+  
+  {
+    id:5,
+    title:"Masai LMS",
+    imgLink:lms,
+    gitLink:"https://github.com/masai-builds/team-6-client.git",
+    deployLink:"https://masai-prototype.netlify.app/",
+    descrip:"This is the Masai Build and Earn Project. We will builld the rest apis for the Masai School LMS ,for this we are using java,Springboot,Mysql,spring security ,hibernet,mvc we learnt a lot of new things about team work, proper coordination and thinking along with all the team members."
 
   }
 ]
@@ -74,7 +96,7 @@ const Projects = () => {
         {list.map((item)=>{
           return <Box
           key={item.id}
-          minW={"45%"}
+          width={"400px"}
           h={"30%"}
           bg={"cyan.200"}
           borderRadius={"15px"}
@@ -118,19 +140,7 @@ const Projects = () => {
                 Demo
               </Button>
             </Link>
-            
-            {/* <Popover>
-  <PopoverTrigger>
-    <Button>about</Button>
-  </PopoverTrigger>
-  <PopoverContent>
-    <PopoverArrow />
-    <PopoverCloseButton />
-    <PopoverHeader>{item.title}</PopoverHeader>
-    <PopoverBody>{item.descrip}</PopoverBody>
-  </PopoverContent>
-</Popover> */}
-     
+          
             <Link
               href={
                item.gitLink

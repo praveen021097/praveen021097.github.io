@@ -263,21 +263,21 @@ const Skills = () => {
         <Box  width={"85%"} m={"auto"}>
         <Flex mt={"15px"} flexWrap={"wrap"} width={"100%"}  justifyContent={"space-between"}>
         <Box  w={"48%"}>
-        <img
+        <Image
             align="center"
             src="https://camo.githubusercontent.com/67fbb88b66c9e8b8715dd6893390c2bf36304fc0379d7a31ce05953d570ce9f1/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d7072617665656e30323130393726"
             alt="praveen021097"
             data-canonical-src="https://github-readme-streak-stats.herokuapp.com?user=praveen021097&theme=onedark"
             style={{ "max-width": "100%" }}
-          ></img>
+          />
         </Box>
-          <Box  w={"48%"}><img
+          <Box  w={"48%"}><Image
             align="center"
             src="https://camo.githubusercontent.com/0826d3b7c35c0a4977c5cd8ebd0bbc0d44f714c76817c8a16a73b0d340d62c97/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7072617665656e3032313039372673686f775f69636f6e733d74727565266c6f63616c653d656e"
             alt="praveen021097"
             data-canonical-src="https://github-readme-stats.vercel.app/api?username=praveen021097&amp;show_icons=true&amp;locale=en"
             style={{ "max-width": "100%" }}
-          ></img></Box>
+          /></Box>
         </Flex>
          
         </Box>
