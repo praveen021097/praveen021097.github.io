@@ -36,6 +36,22 @@ import shopshop from "../Assets/Projects/shopshop.png";
 import ques from "../Assets/Projects/ques.png";
 import lms from "../Assets/Projects/lms.png";
 import { BsGithub } from "react-icons/bs";
+import chakra from "../Assets/techstack/chakra.png"
+import reactm from "../Assets/techstack/react.png"
+import reduxmini from "../Assets/techstack/redux.png"
+import postman from "../Assets/techstack/postman.png"
+import tailwind from "../Assets/techstack/tailwind-css.png"
+import javascript from "../Assets/techstack/java-script.png"
+import typescript from "../Assets/techstack/typescript.png"
+import css from "../Assets/techstack/css3.png"
+import html from "../Assets/techstack/html.png"
+import heroku from "../Assets/techstack/heroku.png"
+import json from "../Assets/techstack/json-file.png"
+import mongo from "../Assets/techstack/mongodb.png"
+import nodejs from "../Assets/techstack/nodejs.png"
+
+
+
 
 
 const list =[
@@ -45,17 +61,18 @@ const list =[
     imgLink:rodan,
     gitLink:"https://github.com/Mallikarjuna-dev/serene-scarecrow-3205.git",
     deployLink:"https://rodanandfields-clone-orcin.vercel.app/",
-    descrip:"Rodan & Fields also known as R+F, is an American multi-level marketing company specializing in skincare products. It uses independent consultants to sell its products. I along with my 3 team members built this project in 6 days time duration in the construct week at Masai."
-
+    descrip:"Rodan & Fields also known as R+F, is an American multi-level marketing company specializing in skincare products. It uses independent consultants to sell its products. I along with my 3 team members built this project in 6 days time duration in the construct week at Masai.",
+    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:chakra,name:"chakra-ui"},{id:6,icon:json,name:"json-server"},{id:7,icon:heroku,name:"heroku"}]
   },
   
   {
     id:2,
     title:"QuesTymes",
     imgLink:ques,
-    gitLink:"https://github.com/masai-builds/team-4-client-questymes.git",
+    gitLink:"",
     deployLink:"https://ques-tymes.netlify.app/",
-    descrip:"This is the Masai Build and Earn collaborative Project.The application provides the features of interview schedulling and one on one session.The highlighting fuctionalities are login/signUp ,calender booking, email notification and reminder and other required functionalities also."
+    descrip:"This is the Masai Build and Earn collaborative Project.The application provides the features of interview schedulling and one on one session.The highlighting fuctionalities are login/signUp ,calender booking, email notification and reminder and other required functionalities also.",
+    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:reduxmini,name:"redux"},{id:6,icon:chakra,name:"chakra-ui"},{id:7,icon:typescript,name:"typescript"}]
 
   },
   {
@@ -64,8 +81,8 @@ const list =[
     imgLink:firstcry,
     gitLink:"https://github.com/unnati1004/firstcry.git",
     deployLink:"https://firstcry-clone-project.netlify.app/",
-    descrip:"The online reseller platform rodan perhaps requires nointroduction. The platform has carved a niche for itself and has gained popularity among consumers and retailers alike by making online reselling and shopping hassle-free and affordable."
-
+    descrip:"The online reseller platform rodan perhaps requires nointroduction. The platform has carved a niche for itself and has gained popularity among consumers and retailers alike by making online reselling and shopping hassle-free and affordable.",
+    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:mongo,name:"mongodb"},{id:4,icon:nodejs,name:"nodejs"}]
   },
   {
     id:4,
@@ -73,18 +90,18 @@ const list =[
     imgLink:shopshop,
     gitLink:"https://github.com/Nachiketlele/adjoining-steel-5186.git",
     deployLink:"https://gregarious-alfajores-075a2f.netlify.app/",
-    descrip:"Millions of people around the world visit Indiegogo to find clever and unconventional things that solve everyday problems large and small. By giving entrepreneurs everywhere a platform to launch new and groundbreaking products, we help surface innovations in tech, design, and much more, all before they go mainstream."
-
+    descrip:"Millions of people around the world visit Indiegogo to find clever and unconventional things that solve everyday problems large and small. By giving entrepreneurs everywhere a platform to launch new and groundbreaking products, we help surface innovations in tech, design, and much more, all before they go mainstream.",
+    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:reduxmini,name:"redux"},{id:6,icon:mongo,name:"mongodb"},{id:7,icon:nodejs,name:"nodejs"}]
   },
   
   {
     id:5,
     title:"Masai LMS",
     imgLink:lms,
-    gitLink:"https://github.com/masai-builds/team-6-client.git",
+    gitLink:"",
     deployLink:"https://masai-prototype.netlify.app/",
-    descrip:"This is the Masai Build and Earn Project. We will builld the rest apis for the Masai School LMS ,for this we are using java,Springboot,Mysql,spring security ,hibernet,mvc we learnt a lot of new things about team work, proper coordination and thinking along with all the team members."
-
+    descrip:"This is the Masai Build and Earn Project. We build learning management system of any online learning organization like masai school . we add all functionality under the security like login logout and protecting routing . basically this application for two type of user admin and user .admin or instructor make and schedule the lecture for student and student join on the time.",
+    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:reduxmini,name:"redux"},{id:6,icon:chakra,name:"chakra-ui"}]
   }
 ]
 const Projects = () => {
@@ -92,7 +109,7 @@ const Projects = () => {
   return (
     <Box h={"auto"} width={"80%"} mt={"50px"} m={"auto"}  pt={"70px"}>
       <Heading color={"white"}>Projects</Heading>
-      <Flex justifyContent={"center"} flexWrap={"wrap"} gap={4} p={"20px"}>
+      <Flex justifyContent={"center"} flexWrap={"wrap"} gap={4} p={"20px"} >
         {list.map((item)=>{
           return <Box
           key={item.id}
@@ -124,6 +141,11 @@ const Projects = () => {
             borderRadius={"15px"}
             mt={"10px"}
           />
+          <Flex w={"95%"} h={"5%"} m={"auto"} justifyContent={"center"} mt={"10px"}gap={2}>
+            {item.teckStack.map((icon)=>{
+              return <Image src={icon.icon} alt={icon.name} w={"10%"} h={"30%"}/>
+            })}
+          </Flex>
           <Flex justifyContent={"space-around"} p={"10px"}>
             <Link
               href={item.deployLink}
@@ -141,7 +163,7 @@ const Projects = () => {
               </Button>
             </Link>
           
-            <Link
+           {item.gitLink? <Link
               href={
                item.gitLink
               }
@@ -158,7 +180,7 @@ const Projects = () => {
               >
                 <BsGithub size={"20px"} /> Code
               </Button>
-            </Link>
+            </Link>:""}
 
           </Flex>
           <Box overflow={"hidden"}>

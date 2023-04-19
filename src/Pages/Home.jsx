@@ -14,9 +14,14 @@ import {
   useColorModeValue,
   Link,
 } from '@chakra-ui/react';
+
 import boybg from "../Assets/home-main.svg";
 import pkresume from "../Assets/pkresume.pdf";
+
+
+
 export default function Projects() {
+
   return (
     <Container maxW={'7xl'}>
       <Stack
@@ -57,7 +62,7 @@ export default function Projects() {
           <Stack
             spacing={{ base: 3, sm: 4 }}
             direction={{ base: 'column', sm: 'row' }}>
-           <Link href={pkresume} target='_blank' download={true}>
+           <Link href={pkresume} target='_blank' download > 
            <Button
               rounded={'full'}
               size={'lg'}
@@ -66,10 +71,12 @@ export default function Projects() {
               colorScheme={'red'}
               bg={'red.400'}
               _hover={{ bg: 'red.500' }}
-             
              >
-             Resume
-            </Button> </Link>
+             Download Resume
+            </Button>
+
+     
+              </Link>
             <Link m={"auto"} href={pkresume} target='_blank' >
            <Button
               rounded={'full'}
