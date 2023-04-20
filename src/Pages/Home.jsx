@@ -15,7 +15,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 
-import boybg from "../Assets/home-main.svg";
+import boybg from "../Assets/pk.jpg";
 import pkresume from "../Assets/pkresume.pdf";
 
 
@@ -49,7 +49,7 @@ export default function Projects() {
                 zIndex: -1,
                 
               }}>
-              Hi i am Praveen Kumar
+              Hi, I am Praveen Kumar
             </Text>
             <br />
             <Text as={'span'} color={'red.400'}>
@@ -111,20 +111,20 @@ export default function Projects() {
           <Box
             position={'relative'}
             height={'300px'}
-            rounded={'2xl'}
+            rounded={'55%'}
             boxShadow={'2xl'}
-            width={'full'}
+            width={'auto'}
             overflow={'hidden'}
             border={"2px solid green"}>
             
             <Image
+           
               alt={'Hero Image'}
               border={"2px solid red"}
               align={'center'}
-              w={'100%'}
-              h={'100%'}
+              w={'105%'}
+              h={'105%'}
               src={boybg}
-               border={"2px solid red"} 
             />
           </Box>
         </Flex>
