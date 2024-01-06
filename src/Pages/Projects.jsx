@@ -69,7 +69,6 @@ const list =[
     descrip:"The online reseller platform rodan perhaps requires nointroduction. The platform has carved a niche for itself and has gained popularity among consumers and retailers alike by making online reselling and shopping hassle-free and affordable.",
     teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:mongo,name:"mongodb"},{id:4,icon:nodejs,name:"nodejs"}]
   },
-
   {
     id:4,
     title:"Masai LMS",
@@ -109,7 +108,7 @@ const list =[
   },
 ]
 const Projects = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Box h={"auto"} width={"80%"} mt={"50px"} m={"auto"}  pt={"70px"}>
       <Heading color={"white"}>Projects</Heading>
@@ -190,7 +189,6 @@ const Projects = () => {
           <Box overflow={"hidden"}>
             <Text>{item.descrip}</Text>
             </Box>
-          
         </Box>
         })}
       </Flex>
