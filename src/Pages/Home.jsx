@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 
 import boybg from "../Assets/pk.jpg";
-import pkresume from "../Assets/pkresume.pdf";
+import pkresume from "../Assets/praveen-kumar.pdf";
 
 
 

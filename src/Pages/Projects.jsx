@@ -35,6 +35,7 @@ import firstcry from "../Assets/Projects/firstcry.png";
 import shopshop from "../Assets/Projects/shopshop.png";
 import ques from "../Assets/Projects/ques.png";
 import lms from "../Assets/Projects/lms.png";
+import buyershub from "../Assets/Projects/buyershub.png";
 import { BsGithub } from "react-icons/bs";
 import chakra from "../Assets/techstack/chakra.png"
 import reactm from "../Assets/techstack/react.png"
@@ -49,13 +50,45 @@ import heroku from "../Assets/techstack/heroku.png"
 import json from "../Assets/techstack/json-file.png"
 import mongo from "../Assets/techstack/mongodb.png"
 import nodejs from "../Assets/techstack/nodejs.png"
+import expressJs from "../Assets/skills/expressjs.png"
 
 
 
 
 
 const list =[
+  
+  
+  
   {
+    id:3,
+    title:"FirstCry",
+    imgLink:firstcry,
+    gitLink:"https://github.com/unnati1004/firstcry.git",
+    deployLink:"https://distracted-kalam-bfa9ee.netlify.app/",
+    descrip:"The online reseller platform rodan perhaps requires nointroduction. The platform has carved a niche for itself and has gained popularity among consumers and retailers alike by making online reselling and shopping hassle-free and affordable.",
+    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:mongo,name:"mongodb"},{id:4,icon:nodejs,name:"nodejs"}]
+  },
+
+  {
+    id:4,
+    title:"Masai LMS",
+    imgLink:lms,
+    gitLink:"",
+    deployLink:"https://masai-prototype.netlify.app/",
+    descrip:"This is the Masai Build and Earn Project. We build learning management system of any online learning organization like masai school . we add all functionality under the security like login logout and protecting routing . basically this application for two type of user admin and user .admin or instructor make and schedule the lecture for student and student join on the time.",
+    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:reduxmini,name:"redux"},{id:6,icon:chakra,name:"chakra-ui"}]
+  },
+  {
+    id:6,
+    title:"BuyersHub",
+    imgLink:buyershub,
+    gitLink:"https://github.com/praveen021097/buyershub",
+    deployLink:"https://buyershub.vercel.app/",
+    descrip:"Welcome to our cutting-edge e-commerce platform, where seamless functionality and a user-centric design converge to provide you with an unparalleled online shopping experience. Built with a powerful tech stack comprising React, Redux, Node.js, Express, and MongoDB, our website is engineered to deliver speed, reliability, and responsiveness.",
+    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:reduxmini,name:"redux"},{id:6,icon:nodejs,name:"nodeJs"},{id:7,icon:expressJs,name:"expressJs"},{id:8,icon:mongo,name:"mongoDB"}]
+  }
+  ,{
     id:1,
     title:"Rodan+Fields",
     imgLink:rodan,
@@ -64,7 +97,6 @@ const list =[
     descrip:"Rodan & Fields also known as R+F, is an American multi-level marketing company specializing in skincare products. It uses independent consultants to sell its products. I along with my 3 team members built this project in 6 days time duration in the construct week at Masai.",
     teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:chakra,name:"chakra-ui"},{id:6,icon:json,name:"json-server"},{id:7,icon:heroku,name:"heroku"}]
   },
-  
   {
     id:2,
     title:"QuesTymes",
@@ -75,34 +107,6 @@ const list =[
     teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:reduxmini,name:"redux"},{id:6,icon:chakra,name:"chakra-ui"},{id:7,icon:typescript,name:"typescript"}]
 
   },
-  {
-    id:3,
-    title:"FirstCry",
-    imgLink:firstcry,
-    gitLink:"https://github.com/unnati1004/firstcry.git",
-    deployLink:"https://firstcry-clone-project.netlify.app/",
-    descrip:"The online reseller platform rodan perhaps requires nointroduction. The platform has carved a niche for itself and has gained popularity among consumers and retailers alike by making online reselling and shopping hassle-free and affordable.",
-    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:mongo,name:"mongodb"},{id:4,icon:nodejs,name:"nodejs"}]
-  },
-  {
-    id:4,
-    title:"Indiegogo",
-    imgLink:shopshop,
-    gitLink:"https://github.com/Nachiketlele/adjoining-steel-5186.git",
-    deployLink:"https://gregarious-alfajores-075a2f.netlify.app/",
-    descrip:"Millions of people around the world visit Indiegogo to find clever and unconventional things that solve everyday problems large and small. By giving entrepreneurs everywhere a platform to launch new and groundbreaking products, we help surface innovations in tech, design, and much more, all before they go mainstream.",
-    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:reduxmini,name:"redux"},{id:6,icon:mongo,name:"mongodb"},{id:7,icon:nodejs,name:"nodejs"}]
-  },
-  
-  {
-    id:5,
-    title:"Masai LMS",
-    imgLink:lms,
-    gitLink:"",
-    deployLink:"https://masai-prototype.netlify.app/",
-    descrip:"This is the Masai Build and Earn Project. We build learning management system of any online learning organization like masai school . we add all functionality under the security like login logout and protecting routing . basically this application for two type of user admin and user .admin or instructor make and schedule the lecture for student and student join on the time.",
-    teckStack:[{id:1,icon:html,name:"html"},{id:2,icon:css,name:"css"},{id:3,icon:javascript,name:"javascipt"},{id:4,icon:reactm,name:"react"},{id:5,icon:reduxmini,name:"redux"},{id:6,icon:chakra,name:"chakra-ui"}]
-  }
 ]
 const Projects = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
